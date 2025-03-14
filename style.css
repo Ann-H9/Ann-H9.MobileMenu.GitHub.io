@@ -1,0 +1,143 @@
+* {
+    font: inherit;
+} 
+  @font-face {
+    font-family: "TT-Lakes";
+    src: 
+      local("TT-Lakes"),
+      url("fonts/TTLakes-ExtraLight.woff") format("woff");
+    font-weight: 100;
+  }  
+  @font-face {
+    font-family: "TT-Lakes";
+    src: 
+      local("TT-Lakes"),
+      url("fonts/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+  }
+
+
+body {
+    font-family: "TT-Lakes", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu {
+    position: absolute;
+    padding-top: 10px;
+    width: 320px;
+    height: 110vh;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);;
+}
+
+.menu__header {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    
+}
+
+.menu__header__block-first--button-burger {
+    position: relative;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url("ic/burger1.svg") no-repeat;
+    margin-right: 20px;
+}
+
+.menu__header__block-first--button-search {
+    position: relative;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url("ic/search.svg") no-repeat;
+}
+
+
+
+.menu__main__title {
+    display: flex;
+    gap: 15px;
+    font-family: "TT-Lakes", sans-serif;
+    font-weight: 100;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.menu__main__ul li {
+  list-style: none;
+  display: block;
+  padding-bottom: 30px;
+  margin-left: -20px;
+  line-height: 24px;
+}
+
+
+.menu__footer__button {
+    transform: translate(20px, 40px);
+    display: flex;
+    gap: 15px;
+}
+
+.menu__footer__button--first {
+    width: 40px;
+    height: 40px;
+    background: url("ic/upperMenu/call.svg") no-repeat;
+    border: none;
+}
+
+.menu__footer__button--second {
+    width: 40px;
+    height: 40px;
+    background: url("ic/upperMenu/chat.svg") no-repeat;
+    border: none;
+}
+
+.menu__footer__button--third {
+    width: 40px;
+    height: 40px;
+    background: url("ic/upperMenu/profile.svg") no-repeat;
+    border: none;
+}
+
+.menu__footer__email {
+    display: block;
+ position: relative;
+ bottom: -50px;
+ right: -20px;
+ color: black;
+}
+
+.menu__footer__tel {
+    display: block;
+ position: relative;
+ bottom: -60px;
+ right: -20px;
+ color: black;
+ font-size: 20px;
+ font-weight: 600;
+ text-decoration: none;
+}
+
+.menu__footer__lang {
+    transform: translate(20px, 100px);
+    padding-bottom: 30px;
+}
+
+.menu__footer__lang > button {
+    background: none;
+    border: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+button:hover {
+    opacity: 0.5; 
+}
